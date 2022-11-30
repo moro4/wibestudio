@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
+import { dark } from './styles/Themes';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Home from './sections/Home';
+import About from './sections/About';
+import Shop from './sections/Shop';
+import { AnimatePresence } from 'framer-motion';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+   return (
+      <>
+         <GlobalStyles />
+         <ThemeProvider theme={dark}>
+            <AnimatePresence>
+               <main data-scroll-container className="smooth-scroll">
+                  <Home />
+                  <About />
+                  <Shop />
+               </main>
+            </AnimatePresence>
+         </ThemeProvider>
+      </>
+   )
 }
 
-export default App;
+export default App
