@@ -5,6 +5,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Home from './sections/Home';
 import About from './sections/About';
 import Shop from './sections/Shop';
+import Banner from './sections/Banner';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -19,6 +20,7 @@ function App() {
                   <Home />
                   <About />
                   <Shop />
+                  <Banner />
                </main>
             </AnimatePresence>
          </ThemeProvider>
