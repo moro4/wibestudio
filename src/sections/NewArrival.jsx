@@ -136,7 +136,7 @@ export default function NewArrival() {
    }, []);
 
    return (
-      <Section ref={sectionRef}>
+      <Section ref={sectionRef} id='new-arrival'>
 
          <Overlay />
 

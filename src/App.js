@@ -7,6 +7,7 @@ import About from './sections/About';
 import Shop from './sections/Shop';
 import Banner from './sections/Banner';
 import NewArrival from './sections/NewArrival';
+import Footer from './sections/Footer';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -23,6 +24,7 @@ function App() {
                   <Shop />
                   <Banner />
                   <NewArrival />
+                  <Footer />
                </main>
             </AnimatePresence>
          </ThemeProvider>

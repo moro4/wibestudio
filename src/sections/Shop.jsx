@@ -143,7 +143,7 @@ export default function Shop() {
 
    return (
       <>
-         <Section ref={sectionRef}>
+         <Section ref={sectionRef} id="shop">
             <Title data-scroll data-scroll-speed='-1'>New Collections</Title>
             <Left ref={leftColRef}>
                <p>

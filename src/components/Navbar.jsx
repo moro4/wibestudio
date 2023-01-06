@@ -69,19 +69,19 @@ export default function NavBar(){
             <MenuBtn onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</MenuBtn>
 
             <MenuItem whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-               Home
+               <a href="#footer">Home</a>
             </MenuItem>
 
             <MenuItem whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-               About
+               <a href="#footer">About</a>
             </MenuItem>
 
             <MenuItem whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-               Shop
+               <a href="#footer">Shop</a>
             </MenuItem>
 
             <MenuItem whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
-               New arrival
+               <a href="#footer">New Arrival</a>
             </MenuItem>
 
          </MenuItems>
